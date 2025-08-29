@@ -14,6 +14,8 @@ def view_tasks():
 
 
 # Step 4: Delete a task
+def delete_task(remove):
+    tasks.pop(remove)
 
 
 # Step 5: Mark task complete
@@ -26,6 +28,8 @@ def view_tasks():
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
+    view_tasks()
+    delete_task(0)
     view_tasks()
     #mark_complete(0)
     #view_tasks()
